@@ -1,5 +1,4 @@
 import argparse, requests, base64, threading, flask, waitress, os, time
-import re
 
 BLUE = "\033[0;38;5;12m"
 ORANGE = "\033[0;38;5;214m"
