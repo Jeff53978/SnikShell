@@ -3,6 +3,8 @@ SnikShell is an undetected remote reverse shell written in Python and uses b64 e
 
 Contact me at discord for problems or questions: Snikker#1337
 
+If you like my projects please consider starring this project!
+
 ![alt text](https://i.imgur.com/u6se7IM.png)
 
 ## Installation
