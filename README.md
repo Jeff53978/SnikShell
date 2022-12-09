@@ -10,14 +10,14 @@ If you like my projects please consider starring this project!
 ## Installation
 
 ```
-git clone github.com/Snikkertjuh/SnikShell SnikShell
+git clone github.com/Jeff53978/SnikShell SnikShell
 cd SnikShell
 python3 -m pip install -r requirements.txt
 python3 server.py [-s <server_ip:port>]
 ```
 ## Authors
 
-- [@Snikkertjuh](https://www.github.com/Snikkertjuh)
+- [@Jeff53978](https://www.github.com/Jeff53978)
 
 
 
