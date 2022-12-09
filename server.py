@@ -37,7 +37,7 @@ class SnikShell():
         threading.Thread(target=self.start_webserver).start()
 
     def clear_console(self):
-        if(os.name == "posix"):
+        if os.name == "posix":
             os.system("clear")
         else:
             os.system("cls")
