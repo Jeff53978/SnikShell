@@ -17,7 +17,7 @@ class SnikShell():
         parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
         parser.add_argument("-s", "--server-ip", action="store")
         args = parser.parse_args()
-        self.port = 8080
+        self.port = 8000
 
         if args.server_ip:
             self.ip = args.server_ip
