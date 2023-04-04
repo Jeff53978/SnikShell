@@ -1,24 +1,26 @@
-# SnikShell Legacy
-SnikShell is an undetected remote reverse shell written in Python and uses b64 encoded powershell payload.
+# SnikShell
 
-Contact me at discord for problems or questions: Jeff_#2475
+SnikShell is an undetected remote reverse shell written in Python that uses a b64 encoded PowerShell payload.
 
-If you like my projects please consider starring this project!
+If you have any problems or questions, feel free to contact me on Discord: Jeff_#2475
 
-![alt text](https://i.imgur.com/u6se7IM.png)
+If you like this project, please consider giving it a star!
+
+![SnikShell Screenshot](https://i.imgur.com/u6se7IM.png)
 
 ## Installation
 
-```
-git clone github.com/Jeff53978/SnikShell SnikShell
-cd SnikShell
-python3 -m pip install -r requirements.txt
-python3 server.py -s <server_ip:port>
-```
-## Authors
+1. Clone the repository: `git clone https://github.com/Jeff53978/SnikShell.git`
+2. Navigate to the SnikShell directory: `cd SnikShell`
+3. Install the required dependencies: `python3 -m pip install -r requirements.txt`
+4. Start the server: `python3 server.py -s <server_ip:port>`
+
+## Author
 
 - [@Jeff53978](https://www.github.com/Jeff53978)
 
 ## License
+
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for more details.
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
