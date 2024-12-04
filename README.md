@@ -1,9 +1,6 @@
 # SnikShell
 
 SnikShell is an undetected remote reverse shell written in Python that uses a b64 encoded PowerShell payload.
-
-If you have any problems or questions, feel free to contact me on Discord: Jeff_#2475
-
 If you like this project, please consider giving it a star!
 
 ![SnikShell Screenshot](https://i.imgur.com/u6se7IM.png)
